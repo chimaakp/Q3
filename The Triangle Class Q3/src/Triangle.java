@@ -1,4 +1,3 @@
-
 public class Triangle {
 	double side1 = 1;
 	double side2 = 1;
