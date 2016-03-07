@@ -1,4 +1,4 @@
-public class Triangle {
+ublic class Triangle {
 	double side1 = 1;
 	double side2 = 1;
 	double side3 = 1;
