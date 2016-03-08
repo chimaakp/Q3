@@ -1,16 +1,15 @@
-public class Triangle {
+public class Triangle extends GeometricObject{
 	double side1 = 1;
 	double side2 = 1;
 	double side3 = 1;
 	
 	public static void main(String[] args) {
-		
-	
 	Triangle triangle1 = new Triangle(4, 3, 2);
 	System.out.printf("The area of a circle with sides of length %d, %d and %d is %f", 4, 3, 2, triangle1.getArea());
 	}
 	
 	
+	//constuctors
 	Triangle() {
 	}
 	
@@ -19,14 +18,30 @@ public class Triangle {
 		side2 = this.side2;
 		side3 = this.side3;		
 	}
-			
-	//gets the perimeter		
-	double gethP() {
-		return (side1 + side2 + side3)/2;	
+	//gets side length
+	public double getSide1() {
+		return side1;
 	}
 	
-	double getArea() {
-		return Math.sqrt(gethP() * (gethP() - side1) *
-		(gethP() - side2) * (gethP() - side3));
+	public double getSide2() {
+		return side2;
+	}
+	
+	public double getSide3() {
+		return side3;
+	}
+	
+	
+	//gets the perimeter
+	@Override
+	public double getPerimeter() {
+		return (side1 + side2 + side3);	
+	}
+	//gets the area
+	@Override
+	public double getArea() {
+		double hP =((side1 + side2 + side3) / 2);
+		return Math.sqrt( hP * (hP - side1) *
+		(hP - side2) * (hP - side3));
 	}
 }
