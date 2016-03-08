@@ -3,12 +3,6 @@ public class Triangle extends GeometricObject{
 	double side2 = 1;
 	double side3 = 1;
 	
-	public static void main(String[] args) {
-	Triangle triangle1 = new Triangle(4, 3, 2);
-	System.out.printf("The area of a circle with sides of length %d, %d and %d is %f", 4, 3, 2, triangle1.getArea());
-	}
-	
-	
 	//constuctors
 	Triangle() {
 	}

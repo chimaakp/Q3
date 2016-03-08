@@ -5,23 +5,21 @@ import org.junit.Test;
 public class TriangleTest {
 
 	@Test
-	public void testTriangle() {
-		fail("Not yet implemented");
+	public void testgetPerimeter() {
+		Triangle t1 = new Triangle();
+		double Per = 3;
+		
+		assertEquals(t1.getPerimeter() , Per);
 	}
 
-	@Test
-	public void testTriangleDoubleDoubleDouble() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	public void testGethP() {
-		fail("Not yet implemented");
-	}
 
 	@Test
 	public void testGetArea() {
-		fail("Not yet implemented");
+		Triangle t2 = new Triangle(4, 3, 5);
+		double Ar = 6
+		
+		assertEquals( t2.getArea(), Ar);
+		
 	}
 
 }
