@@ -37,5 +37,6 @@ public class Triangle extends GeometricObject{
 		double hP =((side1 + side2 + side3) / 2);
 		return Math.sqrt( hP * (hP - side1) *
 		(hP - side2) * (hP - side3));
+		
 	}
 }
